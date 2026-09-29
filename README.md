@@ -4,12 +4,17 @@ This repository demonstrates how to manage and build a Python project using uv
 ![Repo](./images/repo-virtual.png)
 
 
-
 ## UV Native commands
 ### Build
 ```
-./uvcmd.sh
+./jfcli.sh
 ```
+
+#### Artifact upload
+![Artifact upload](./images/artifact-publish.png)
+
+### Build Publish
+![ArtiBuildfact publish](./images/build-publish.png)
 
 
 
