@@ -5,7 +5,13 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.lock
+/dist/
+**/*.egg-info
+*.egg-info
+**/*.egg-info/
+*.venv/
+**/*.venv/
 # Distribution / packaging
 .Python
 build/
