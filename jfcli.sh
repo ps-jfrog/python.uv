@@ -23,17 +23,17 @@ export UV_PUBLISH_URL=${REPO_REGISTRY}
 export UV_PUBLISH_USERNAME=${PSAZUSE_JF_USERNAME}
 export UV_PUBLISH_PASSWORD=${PSAZUSE_JF_ACCESS_TOKEN}
 
-echo "USERNAME: ${UV_USERNAME}"
-echo "TOKEN: ${UV_TOKEN}"
+echo "USERNAME: ${UV_PUBLISH_USERNAME}"
+echo "TOKEN: ${UV_PUBLISH_PASSWORD}"
 
 
-uv auth login ${REPO_REGISTRY} --username ${PSAZUSE_JF_USERNAME} --password ${PSAZUSE_JF_ACCESS_TOKEN}
+uv auth login ${REPO_REGISTRY} --username ${UV_PUBLISH_USERNAME} --password ${UV_PUBLISH_PASSWORD}
 
 # jf package-alias install --packages=uv
 
 uv sync
 uv build 
-uv publish --index py-uv-virtual
+uv publish dist/* --index py-uv-virtual
 
 # uv run uvicorn src.main:app --reload
 

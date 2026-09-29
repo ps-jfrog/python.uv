@@ -16,10 +16,6 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/html_demo"]
 
-[[tool.uv.index]]
-name = "py-uv-virtual"
-url = "https://psazuse.jfrog.io/artifactory/api/pypi/py-uv-virtual/simple"
-
 [[index]]
 name="py-uv-virtual"
 publish-url = "https://psazuse.jfrog.io/artifactory/api/pypi/py-uv-virtual"

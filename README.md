@@ -16,4 +16,4 @@ This repository demonstrates how to manage and build a Python project using uv
 
 ## Reference
  - https://docs.jfrog.com/artifactory/docs/jf-uv
- - 
+ - https://docs.jfrog.com/artifactory/docs/pypi-repositories#uv-client
